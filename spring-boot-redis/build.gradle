@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenCentral()
+}
+
+dependencies {
+
+    compile("org.springframework.boot:spring-boot-starter-data-redis:${spring_boot_version}")
+    compile("org.apache.commons:commons-pool2:${connection_pool_version}")
+    compile("com.fasterxml.jackson.core:jackson-databind:${jackson_version}")
+    compile("com.fasterxml.jackson.core:jackson-core:${jackson_version}")
+    compile("com.fasterxml.jackson.core:jackson-annotations:${jackson_version}")
+
+}

@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
-    private static final long serverVersionUID = -7200372816323414372L;
+    private static final long ServerVersionUID = -7200372816323414372L;
 
     private Integer age;
     private String name;

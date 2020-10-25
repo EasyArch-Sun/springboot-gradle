@@ -12,12 +12,14 @@ import java.io.Serializable;
 @Configuration
 public class RedisConfig {
 
-    @Bean(name = "redisTemplate")
-    public RedisTemplate<String, Serializable> redisTemplate(LettuceConnectionFactory lettuceConnectionFactory) {
-        RedisTemplate<String, Serializable> redisTemplate = new RedisTemplate<>();
+    @Bean
+    public RedisTemplate<String,Serializable> redisTemplate(LettuceConnectionFactory lettuceConnectionFactory){
+        RedisTemplate<String,Serializable> redisTemplate=new RedisTemplate<>();
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
         redisTemplate.setConnectionFactory(lettuceConnectionFactory);
         return redisTemplate;
+
     }
+
 }
