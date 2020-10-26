@@ -1,3 +1,4 @@
 rootProject.name = 'demo'
 include 'spring-boot-jdbc'
 include 'spring-boot-redis'
+include 'spring-boot-swagger'
