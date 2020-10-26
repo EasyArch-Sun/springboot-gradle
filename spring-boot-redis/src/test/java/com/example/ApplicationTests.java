@@ -30,5 +30,8 @@ public class ApplicationTests {
         Assert.assertEquals(2, redisTemplate.opsForValue().get("yyy").getAge().intValue());
 
 
+        System.out.println("完成redis。。。。");
+
+
     }
 }
