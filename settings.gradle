@@ -3,3 +3,7 @@ include 'spring-boot-jdbc'
 include 'spring-boot-redis'
 include 'spring-boot-swagger'
 include 'spring-boot-mybatis'
+include 'spring-boot-dubbo-provider'
+include 'spring-boot-dubbo-consumer'
+include 'spring-boot-dubbo-api'
+

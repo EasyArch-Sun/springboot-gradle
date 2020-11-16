@@ -1,0 +1,12 @@
+
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile("org.apache.dubbo:dubbo:${dubbo_version}")
+    compile("org.apache.dubbo:dubbo-spring-boot-starter:${dubbo_version}")
+    compile project(":spring-boot-dubbo-api")
+//    compile("org.apache.zookeeper:zookeeper:${zookeeper_version}")
+//    compile("org.apache.curator:curator-framework:${curator_version}")
+//    compile("org.apache.curator:curator-recipes:${curator_version}")
+}
