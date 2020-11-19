@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -8,11 +9,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UserCotroller {
+@RestController
+@Api(tags = "用户模块")
+@RequestMapping("/user")
+public class UserController {
 
     private Map<Integer,String> map=new HashMap<>();
 
-    public UserCotroller(){
+    public UserController(){
         map.put(1,"xxx");
         map.put(2,"yyy");
         map.put(3,"zzz");
