@@ -1,0 +1,22 @@
+#
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/test
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#
+
+spring:
+  application:
+    name: dubbo-demo-provider
+dubbo:
+  scan:
+    base-packages: com.example.service
+  protocol:
+    name: dubbo
+    port: ${random.int[40000,50000]}
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
