@@ -6,4 +6,8 @@ include 'spring-boot-mybatis'
 include 'spring-boot-dubbo-provider'
 include 'spring-boot-dubbo-consumer'
 include 'spring-boot-dubbo-api'
+include 'spring-boot-dubbo-zk-provider'
+include 'spring-boot-dubbo-zk-consumer'
+include 'spring-boot-kafka-provider'
+include 'spring-boot-kafka-consumer'
 

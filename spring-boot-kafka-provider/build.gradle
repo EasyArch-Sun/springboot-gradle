@@ -1,0 +1,9 @@
+
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:${spring_boot_version}")
+    compile("org.springframework.boot:spring-boot-starter-mail:${spring_boot_version}")
+    compile("org.springframework.kafka:spring-kafka:${spring_kafka_version}")
+
+}
